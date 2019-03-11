@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    $("form").submit(function(e) {
-        return false;
-    });
+    document.getElementsByTagName("form")[0].addEventListener("submit", (e) => { e.preventDefault(); });
     $("#Submit").on("click", (e) => {
         let a = $("#Phone");
         let b = $("#Email");
