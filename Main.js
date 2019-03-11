@@ -2,8 +2,7 @@ $(document).ready(function() {
     $("form").submit(function(e) {
         e.preventDefault();
     });
-    $("#Submit").on("submit", (e) => {
-        e.preventDefault();
+    $("#Submit").on("click", (e) => {
         let a = $("#Phone");
         let b = $("#Email");
         let c = $("#Pass");
@@ -14,7 +13,6 @@ $(document).ready(function() {
         if (a[0].value == "" || isNum == true || a[0].value.length < 10 || c[0].value == "" || c[0].value.length < 8 || b[0].value == "") {
             warning();
         } else {
-            e.preventDefault();
             window.location.href = "https://aamir2000.github.io/Test/Hello.html";
         }
     });
