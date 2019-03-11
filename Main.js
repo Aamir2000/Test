@@ -1,10 +1,14 @@
-$(document).ready(function() {
+
+
+$(document).ready(function () {
+    
     document.getElementsByTagName("form")[0].addEventListener("submit", (e) => { e.preventDefault(); });
     $("#Submit").on("click", (e) => {
+        
         let a = $("#Phone");
         let b = $("#Email");
         let c = $("#Pass");
-        let Exp = new RegExp( /[a-z,A-Z]/ , "gi");
+        let Exp = new RegExp(/[a-z,A-Z]/, "gi");
         let isNum = Exp.test(a[0].value.toString());
         console.log(a[0].value.toString());
         console.log(isNum);
@@ -13,24 +17,27 @@ $(document).ready(function() {
         } else {
             window.location.href = "https://aamir2000.github.io/Test/Hello.html";
         }
+    
     });
+    
+    
 });
 
 
-function warning(){
+function warning() {
     $("#warning").addClass("Animate");
-            $("#warning").animate({
-                opacity: 1,
-                height: 50,
-                display:"block"
-            }, 1800)
-            setTimeout(() => {
-                $("#warning").removeClass("Animate");
-                $("#warning").animate({
-                    opacity: 0,
-                    height: 0,
-                    display:"none"
-                }, 0)
-             }, 8000);
-            $("#warning")[0].innerHTML = "Please Fill In All The Fields Correctly";
+    $("#warning").animate({
+        opacity: 1,
+        height: 50,
+        display: "block"
+    }, 1800)
+    setTimeout(() => {
+        $("#warning").removeClass("Animate");
+        $("#warning").animate({
+            opacity: 0,
+            height: 0,
+            display: "none"
+        }, 0)
+    }, 8000);
+    $("#warning")[0].innerHTML = "Please Fill In All The Fields Correctly";
 }
