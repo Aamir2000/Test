@@ -2,7 +2,8 @@ $(document).ready(function() {
     $("form").submit(function(e) {
         e.preventDefault();
     });
-    $("#Submit").on("click", (e) => {
+    $("#Submit").on("submit", (e) => {
+        e.preventDefault();
         let a = $("#Phone");
         let b = $("#Email");
         let c = $("#Pass");
