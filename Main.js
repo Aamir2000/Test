@@ -13,7 +13,7 @@ $(document).ready(function() {
         if (a[0].value == "" || isNum == true || a[0].value.length < 10 || c[0].value == "" || c[0].value.length < 8 || b[0].value == "") {
             warning();
         } else {
-            window.location = "https://aamir2000.github.io/Test/Hello.html";
+            window.location.href = "https://aamir2000.github.io/Test/Hello.html";
         }
     });
 });
