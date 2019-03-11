@@ -2,9 +2,8 @@
 
 $(document).ready(function () {
     
-    document.getElementsByTagName("form")[0].addEventListener("submit", (e) => { e.preventDefault(); });
+    document.getElementsByClassName("form")[0].addEventListener("submit", (e) => { e.preventDefault(); });
     $("#Submit").on("click", (e) => {
-        
         let a = $("#Phone");
         let b = $("#Email");
         let c = $("#Pass");
