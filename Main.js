@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("form").submit(function(e) {
-        e.preventDefault();
+        return false;
     });
     $("#Submit").on("click", (e) => {
         let a = $("#Phone");
