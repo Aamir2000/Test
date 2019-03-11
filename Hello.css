@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 180px;
+    font-family: Open Sans, sans-serif;
+    display: block;
+    animation-name: Fo;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 7s;
+}
+
+@keyframes Fo{
+    from{
+        font-size: 0px;
+        font-family: Open Sans, sans-serif;
+        display: block;
+        
+    }
+    to{
+        font-size: 150px;
+        font-family: Open Sans, sans-serif;
+        display: block;
+        transform: rotate(360deg);
+        
+    }
+}

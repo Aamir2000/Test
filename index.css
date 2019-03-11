@@ -1,0 +1,400 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f5f3f3;
+}
+@media screen and (min-width: 860px) {
+	input,
+	input:active {
+		outline: none;
+		border: none;
+	}
+	.top_Nav {
+		height: fit-content;
+	}
+	.top_Nav img {
+		margin: 0 auto;
+		display: block;
+		padding: 20px;
+	}
+	.head {
+		background-color: #ffffff;
+		width: 90%;
+		height: 80px;
+		margin: 0 auto;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	.head img {
+		flex: 1;
+		max-width: 80px;
+		max-height: 90px;
+		min-height: 70px;
+		align-self: center;
+	}
+	.head span {
+		align-self: center;
+		color: rgb(150, 148, 148);
+		font-family: Open Sans, sans-serif;
+    }
+    .middle_Form{
+        width: 80%;
+        margin: 0 auto;
+    }
+	.form {
+		background-color: #ffffff;
+        height: fit-content;
+        max-height: 450px;
+        width: 90%;
+		margin: 10px auto;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .side_panel{
+        flex: 1;
+        display: block;
+        border: 1px solid;
+        position: relative;
+        height: 450px;
+        min-width: 300px;
+        overflow: hidden;
+    }
+    .side_panel img{
+        max-height: 450px;
+        min-width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .overlay{
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-height: 450px;
+        min-height: 450px;
+        min-width: 100%;
+        max-width: 100px;
+        z-index: 1;
+    }
+    .overlay{
+        display: flex;
+        flex-direction: column;
+    }
+    .overlay .items{
+        padding: 15px;
+        color: rgb(201, 195, 195);
+        font-family: Open Sans,sans-serif;
+        font-size: 14px;
+        display: inline-flex;
+
+    }
+    .overlay .items i{
+        width: 100%;
+        height: 100%;
+        flex: 1;
+    }
+    .overlay .items div{
+        flex: 8;
+        align-self: center;
+        padding: 0px 10px;
+    }
+	.form .Login {
+		display: flex;
+        flex-direction: column;
+        flex:3;
+        
+	}
+	.form .Login form {
+		align-self: center;
+		min-width: 70%;
+		max-width: 70%;
+	}
+	.form .Login form * {
+		display: block;
+		margin: 0 auto;
+	}
+	.form .Login form input:not([type="submit"]) {
+		border: 1px solid grey;
+		margin: 5px auto;
+		border-radius: 15px;
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		overflow: hidden;
+	}
+	.form .Login form input[type="submit"] {
+		border: none;
+		cursor: pointer;
+		margin: 0px auto;
+		border-radius: 15px;
+		width: 60%;
+		height: 40px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		background: #e84545;
+		color: white;
+		font-size: 17px;
+	}
+	.form .Login .Head {
+		align-self: center;
+		margin: 15px 0px;
+		font-family: Open Sans, sans-serif;
+		font-size: 25px;
+		color: grey;
+	}
+	.form .Login .Desc {
+		font-size: 14px;
+		text-align: center;
+		padding: 10px;
+		width: 100%;
+	}
+	#warning {
+		text-align: center;
+		line-height: 50px;
+		height: 0px;
+		opacity: 0;
+		font-size: 12px;
+		transition: 3s;
+		font-family: Open Sans, sans-serif;
+	}
+	.Animate {
+		background-color: lightcoral;
+		color: white;
+		height: 50px;
+		font-family: Open Sans, sans-serif;
+		border-radius: 15px;
+		transition: 3s;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 860px)  {
+    .side_panel{
+     display: none;   
+    }
+	input,
+	input:active {
+		outline: none;
+		border: none;
+	}
+	.top_Nav {
+		height: fit-content;
+	}
+	.top_Nav img {
+		margin: 0 auto;
+		display: block;
+		padding: 30px;
+	}
+	.head {
+		background-color: #ffffff;
+		width: 90%;
+		height: 80px;
+		margin: 0 auto;
+		border-radius: 10px;
+		display: flex;
+	}
+	.head img {
+		flex: 1;
+		max-width: 80px;
+		max-height: 90px;
+		min-height: 70px;
+		align-self: center;
+	}
+	.head span {
+		align-self: center;
+		color: rgb(150, 148, 148);
+		font-family: Open Sans, sans-serif;
+	}
+	.form {
+		background-color: #ffffff;
+		height: fit-content;
+		width: 90%;
+		margin: 10px auto;
+        padding: 20px 5px;
+        display: block;
+	}
+	.form .Login {
+		display: flex;
+		flex-direction: column;
+	}
+	.form .Login form {
+		align-self: center;
+		min-width: 70%;
+		max-width: 70%;
+	}
+	.form .Login form * {
+		display: block;
+		margin: 0 auto;
+	}
+	.form .Login form input:not([type="submit"]) {
+		border: 1px solid grey;
+		margin: 5px auto;
+		border-radius: 15px;
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		overflow: hidden;
+	}
+	.form .Login form input[type="submit"] {
+		border: none;
+		cursor: pointer;
+		margin: 0px auto;
+		border-radius: 15px;
+		width: 60%;
+		height: 40px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		background: #e84545;
+		color: white;
+		font-size: 17px;
+	}
+	.form .Login .Head {
+		align-self: center;
+		margin: 15px 0px;
+		font-family: Open Sans, sans-serif;
+		font-size: 25px;
+		color: grey;
+	}
+	.form .Login .Desc {
+		font-size: 14px;
+		text-align: center;
+		padding: 10px;
+		width: 100%;
+	}
+	#warning {
+		text-align: center;
+		line-height: 50px;
+		height: 0px;
+		opacity: 0;
+		font-size: 12px;
+		transition: 3s;
+		font-family: Open Sans, sans-serif;
+	}
+	.Animate {
+		background-color: lightcoral;
+		color: white;
+		height: 50px;
+		font-family: Open Sans, sans-serif;
+		border-radius: 15px;
+		transition: 3s;
+	}
+}
+
+@media screen  and (max-width: 720px) {
+    .side_panel{
+        display: none;   
+       }
+	input,
+	input:active {
+		outline: none;
+		border: none;
+	}
+	.top_Nav {
+		height: 100px;
+	}
+	.top_Nav img {
+		margin: 0 auto;
+		display: block;
+		padding: 5%;
+	}
+	.head {
+		background-color: #ffffff;
+		width: 90%;
+		height: 80px;
+		margin: 0 auto;
+		border-radius: 10px;
+		display: flex;
+	}
+	.head img {
+		flex: 1;
+		max-width: 80px;
+		max-height: 90px;
+		min-height: 70px;
+		align-self: center;
+	}
+	.head span {
+		align-self: center;
+		color: rgb(150, 148, 148);
+		font-family: Open Sans, sans-serif;
+	}
+	.form {
+		background-color: #ffffff;
+		height: fit-content;
+		width: 90%;
+		margin: 10px auto;
+		padding: 20px 5px;
+	}
+	.form .Login {
+		display: flex;
+		flex-direction: column;
+	}
+	.form .Login form {
+		align-self: center;
+		min-width: 70%;
+		max-width: 70%;
+	}
+	.form .Login form * {
+		display: block;
+		margin: 0 auto;
+	}
+	.form .Login form input:not([type="submit"]) {
+		border: 1px solid grey;
+		margin: 5px auto;
+		border-radius: 15px;
+		width: 100%;
+		height: 35px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		overflow: hidden;
+	}
+	.form .Login form input[type="submit"] {
+		border: none;
+		cursor: pointer;
+		margin: 0px auto;
+		border-radius: 15px;
+		width: 60%;
+		height: 40px;
+		text-align: center;
+		font-family: Open Sans, sans-serif;
+		background: #e84545;
+		color: white;
+		font-size: 17px;
+	}
+	.form .Login .Head {
+		align-self: center;
+		margin: 15px 0px;
+		font-family: Open Sans, sans-serif;
+		font-size: 25px;
+		color: grey;
+	}
+	.form .Login .Desc {
+		font-size: 14px;
+		text-align: center;
+		padding: 10px;
+	}
+	#warning {
+		text-align: center;
+		line-height: 50px;
+		height: 0px;
+		opacity: 0;
+		font-size: 12px;
+		transition: 3s;
+		font-family: Open Sans, sans-serif;
+	}
+	.Animate {
+		background-color: lightcoral;
+		color: white;
+		height: 50px;
+		font-family: Open Sans, sans-serif;
+		border-radius: 15px;
+		transition: 3s;
+	}
+}
